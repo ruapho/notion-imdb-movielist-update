@@ -82,7 +82,7 @@ class NotionAPI:
             {
                 "or": [
                     {
-                        "property": "Duration [min]",
+                        "property": "Duration [h]",
                         "number": {
                             "is_empty": True
                         }
