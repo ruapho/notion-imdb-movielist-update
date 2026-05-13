@@ -64,7 +64,7 @@ class Updater:
             
         properties["Director/Creator"] = {"select": {"name": director}}
         if movie.duration:
-            properties["Duration [min]"] = {"number": movie.duration}
+            properties["Duration [h]"] = {"number": round(movie.duration / 60, 2)}
         if movie.rating:
             properties["IMDB Rating"] = {"number": movie.rating}
         if movie.plot:
